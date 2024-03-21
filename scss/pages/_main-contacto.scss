@@ -1,0 +1,20 @@
+/*--- Main CONTACTO ---*/
+.flex-ayuda img{
+    width: 100%;
+}
+.flex-contacto{
+    @include flex(column, stretch, flex-start);
+    /*display: flex;
+    flex-direction: column;
+    */
+    margin-bottom: 10px;
+    .enviar {
+        background-color: $color-secundario;
+        color: $color-principal;
+        border: none;
+        &:hover{
+                @extend %estilo-unico;
+                }
+        }
+
+}

@@ -1,0 +1,28 @@
+/* -----MAIN PALMARES---*/
+/*CARRUSEL*/
+.img img{
+    width: 100%;
+}
+/*PALMARES*/
+.container-palmares{
+    @include flex (row, flex-start, space-around);
+    flex-wrap: wrap;
+    row-gap: 50px;
+    .palmares{
+        width: 400px;
+        height: 250px;
+        background: rgba( 255, 255, 255, 0.25 );
+        @include flex(row, center, space-around);
+        box-shadow: 10px 10px 19px 1px rgba(22,40,140,1);
+        border-radius: 5% 0 5% 0;
+        overflow: hidden;
+        &:hover{
+            transform: scale(1.1);
+            transition: 4s;
+        }
+        .texto {
+            @include flex(column, center, flex-start); 
+            text-align: center;
+        }
+    }
+}

@@ -9,6 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Link de CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!-- Link de icono-->
     <link rel="icon" href="../img/pestania-roman.ico">
     <!-- Link de textos -->
@@ -54,29 +55,40 @@
 
     <main class="fondo-amarillo">
         <h1 class="titulo">Contacto</h1>
-        <h2 class="subtitulo">Ingrese su opinión o consulta, muchas gracias.</h2>
-        <form>
-            <div>
-                <label for="nombre">Nombre: </label>
-                <input type="text" placeholder="nombre">
+        <div class="container-fluid mb-5 mt-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-8">
+                    <div class="flex-ayuda">
+                        <p>Nos interesa conocerte y saber tù opinion al respecto, saber que es lo que te gustaria, contenido que desees ver o cambios que harias. Recorda que tù opinion es de gran interes!</p>
+                        <img src="../img/riquelme-sonrisa.webp" alt="sonrisa de Roman"> 
+                    </div>
+                    
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <form class="contenedor-flex">
+                        <div class="flex-contacto">
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" placeholder="nombre">
+                        </div>
+                        <div class="flex-contacto">
+                            <label for="apellido">Apellido: </label>
+                            <input type="text" placeholder="apellido">
+                        </div>
+                        <div class="flex-contacto">
+                            <label for="correo">Mail:</label>
+                            <input type="mail" placeholder="correo">
+                        </div>
+                        <div class="flex-contacto">
+                            <label for="mensaje">Mensaje: </label>
+                            <textarea name="mensaje" id="mensaje" cols="21" rows="8" placeholder="Escriba aquí"></textarea>
+                        </div>
+                        <div class="flex-contacto">
+                            <input class="enviar" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div>
-                <label for="apellido">Apellido: </label>
-                <input type="text" placeholder="apellido">
-            </div>
-            <div>
-                <label for="correo">Mail:</label>
-                <input type="mail" placeholder="correo">
-            </div>
-            <div>
-                <label for="mensaje">Mensaje: </label>
-                <textarea name="mensaje" id="mensaje" cols="25" rows="10" placeholder="Escriba aquí"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
-
+        </div>
     </main>
 
     <footer class="fondo-azul">

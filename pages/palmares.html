@@ -8,8 +8,12 @@
     <!-- Link de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link de SWIFFY SLIDER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- Link de CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!-- Link de icono-->
     <link rel="icon" href="../img/pestania-roman.ico">
     <!-- Link de textos -->
@@ -56,82 +60,119 @@
     <main class="fondo-amarillo">
         <section>
             <h1 class="titulo">Palmarés</h1>
-            <img src="../img/riquelme-palmares.jpg" alt="Riquelme palmares">
+            <div class="swiffy-slider slider-nav-square slider-nav-dark slider-nav-outside">
+                <ul class="slider-container">
+                    <li>
+                        <div id="slide1" class="img">
+                            <img src="../img/riquelme-campeon.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div id="slide2" class="img">
+                            <img src="../img/riquelme-campeon-libertadores.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div id="slide3" class="img">
+                            <img src="../img/riquelme-campeon-olimpico.jpg" alt="">
+                        </div>
+                    </li>
+                </ul>
+            
+                <button type="button" class="slider-nav"></button>
+                <button type="button" class="slider-nav slider-nav-next"></button>
+                <ul class="slider-indicators">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            </div>
         </section>
-        <section>
-            <h2 class="subtitulo">Club Atletico Boca Juniors</h2>
-            <div>
-                <div>
-                    <img src="../img/copa-libertadoress.png" alt="copa libertadores">
+        <h2 class="subtitulo">Trofeos y Distinciones.</h2>
+        <section class="container-palmares">
+            <div class="palmares">
+                <div class="imagen">
+                    <img src="../img/mejor-jugador.png" alt="Premio del año">
                 </div>
-                <div>
+                <div class="texto">
+                    <h3>4 Futbolista del año</h3>
+                    <p>2011  <img src="../img/argentina.png" alt="Argentina">  Argentina</p>
+                    <p>2008  <img src="../img/argentina.png" alt="Argentina">  Argentina</p>
+                    <p>2001  <img src="../img/argentina.png" alt="Argentina">  Argentina</p>
+                    <p>2000  <img src="../img/argentina.png" alt="Argentina">  Argentina</p>
+                </div>
+            </div>
+            <div class="palmares">
+                <div class="imagen">
+                    <img src="../img/libertadores.png" alt="Copa Libertadores">
+                </div>
+                <div class="texto">
                     <h3>3 Copas Libertadores</h3>
+                    <p>2007  <img src="../img/boca.png" alt="Boca Juniors">  Boca Juniors</p>
+                    <p>2001  <img src="../img/boca.png" alt="Boca Juniors">  Boca Juniors</p>
+                    <p>2000  <img src="../img/boca.png" alt="Boca Juniors">  Boca Juniors</p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <img src="../img/copa-intercontinental.jpg" alt="copa Intercontinental">
-                </div>
-                <div>
-                    <h3>1 Copa Intercontinental</h3>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../img/recopa.png" alt="Recopa Sudamericana">
-                </div>
-                <div>
-                    <h3>1 Recopa Sudamericana</h3>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../img/liga.png" alt="Liga Argentina">
-                </div>
-                <div>
-                    <h3>5 Ligas Argentinas</h3>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../img/copa-argentina.jpg" alt="copa argentina">
-                </div>
-                <div>
-                    <h3>1 Copa Argentina</h3>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2 class="subtitulo">Villarreal C. F.</h2>
-            <div>
-                <div>
-                    <img src="../img/intertoto.png" alt="copa intertoto">
-                </div>
-                <div>
-                    <h3>1 Copa intertoto</h3>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2 class="subtitulo">Selección Argentina</h2>
-            <div>
-                <div>
+            <div class="palmares">
+                <div class="imagen">
                     <img src="../img/mundial.png" alt="Mundial Sub-20">
                 </div>
-                <div>
-                    <h3>1 Copa del Mundo Sub-20</h3>
+                <div class="texto">
+                    <h3>1 Mundial Sub-20</h3>
+                    <p>1997  <img src="../img/argentina.png" alt="Argentina">  Argentina</p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <img src="../img/medalla.png" alt="medalla olimpica">
+            <div class="palmares">
+                <div class="imagen">
+                    <img src="../img/intercontinental.png" alt="Copa Intercontinental">
                 </div>
-                <div>
+                <div class="texto">
+                    <h3>1 Copa Intercontinental</h3>
+                    <p>2001  <img src="../img/boca.png" alt="Boca Juniors">  Boca Juniors</p>
+                </div>
+            </div>
+            <div class="palmares">
+                <div class="imagen">
+                    <img src="../img/recopa.png" alt="Recopa Sudamericana">
+                </div>
+                <div class="texto">
+                    <h3>1 Recopa Sudamericana</h3>
+                    <p>2008  <img src="../img/boca.png" alt="Boca Juniors">  Boca Juniors</p>
+                </div>
+            </div>
+            <div class="palmares">
+                <div class="imagen">
+                    <img src="../img/liga.png" alt="Liga Argentina">
+                </div>
+                <div class="texto">
+                    <h3>5 Ligas Argentinas</h3>
+                    <p>2011  <img src="../img/boca.png" alt="Boca Juniors">  Boca Juniors</p>
+                    <p>2008  <img src="../img/boca.png" alt="Boca Juniors">  Boca Juniors</p>
+                    <p>2000  <img src="../img/boca.png" alt="Boca Juniors">  Boca Juniors</p>
+                    <p>1999  <img src="../img/boca.png" alt="Boca Juniors">  Boca Juniors</p>
+                    <p>1998  <img src="../img/boca.png" alt="Boca Juniors">  Boca Juniors</p>
+                </div>
+            </div>
+            <div class="palmares">
+                <div class="imagen">
+                    <img src="../img/copa-argentina.png" alt="Copa Argentina">
+                </div>
+                <div class="texto">
+                    <h3>1 Copa Argentina</h3>
+                    <p>2012  <img src="../img/boca.png" alt="Boca Juniors">  Boca Juniors</p>
+                </div>
+            </div>
+            <div class="palmares">
+                <div class="imagen">
+                    <img src="../img/medalla.png" alt="Medala de Oro">
+                </div>
+                <div class="texto">
                     <h3>1 Medalla de Oro Olimpica</h3>
+                    <p>2008  <img src="../img/argentina.png" alt="Argentina">  Argentina</p>
                 </div>
             </div>
-        </section>
-
+        </section>    
     </main>
 
     <footer class="fondo-azul">

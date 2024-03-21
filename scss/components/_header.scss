@@ -1,0 +1,33 @@
+.menu {
+	flex-grow: 0;
+	ul {
+		column-gap: 10px;
+		align-items: center;
+		li {
+			a {
+				text-decoration: none;
+				color: $color-principal;
+				font-size: 20px;
+			}
+		}
+	}
+}
+.menu-hamburguesa {
+	background-image: url(../img/menu-hamburguesa.svg);
+}
+.menu-boton {
+	border: 2px solid $color-principal;
+	&:focus {
+		box-shadow: none;
+	}
+}
+.padding-0 {
+	padding: 0;
+	padding-right: 10px;
+}
+.decoracion {
+	&:hover {
+		color: rgb(255, 234, 0);
+		text-decoration: underline;
+	}
+}

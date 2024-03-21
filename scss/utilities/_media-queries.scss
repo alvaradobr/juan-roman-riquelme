@@ -1,0 +1,119 @@
+/*--MEDIA ESPECIFICA DEL NAV--*/
+@media screen and (max-width: 991px){
+    .menu{
+        position: absolute;
+        top: 185px;
+        background-image: url(../img/fondo-azul.svg);
+        width: 100%;
+    }
+}
+/*----TABLET -----*/
+@media screen and (max-width: 1024px) {
+    .carta{
+        @include flex(column, center, flex-start);
+        img{
+            width: 100%;
+        }
+        .carta-texto{
+            img {
+                width: 20%;
+                border: none;
+            }
+        }
+    }
+    /*---GALERIA---*/
+    .grid-fotos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(15, 300px);
+        grid-template-areas: 
+        "img2     img1"
+        "img2     img3"
+        "img19     img7"
+        "img6     img7"
+        "img9     img11"
+        "img9     img10"
+        "img12    img8"
+        "img13    img8"
+        "img14    img16" 
+        "img14    img18"
+        "img17    img15"
+        "img17    img15"
+        "img20    img4"
+        "img20    img4"
+        "img5    img5"
+
+        ;
+    }
+    /*--BIBLIOGRAFÍA--*/
+    .grid-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 850px);
+        gap: 15px;
+        grid-template-areas: 
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8"
+        "card9 card9";
+    }
+
+    /*----FOOTER----*/
+    .pie-pagina {
+        @include flex (column-reverse, center, flex-start);
+        .pie-links{
+            @include flex (row, flex-start, flex-start);
+        }
+    }
+}
+/*---MOBILE---*/
+@media screen and (max-width: 768px) {
+    /*---Galeria fotos----*/
+    .grid-fotos {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+        "img8"
+        "img9"
+        "img10"
+        "img11"
+        "img12"
+        "img13"
+        "img14"
+        "img15"
+        "img16"
+        "img17"
+        "img18"
+        "img19"
+        "img20"
+        ;
+    }
+    /*---galeria videos----*/
+    .grid-videos{
+        grid-template-columns: 1fr;
+    }
+
+
+    .grid-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 900px);
+        gap: 15px;
+        grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8"
+        "card9";
+    }
+    }
